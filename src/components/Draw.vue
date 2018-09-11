@@ -23,7 +23,7 @@
       <h2>{{ name }}的抽卡結果為：</h2>
       <ul class="items">
         <li v-for="result in results">
-          {{ result.name }}
+          {{ result.type }} ： {{ result.name }}
         </li>
       </ul>
     </div>
