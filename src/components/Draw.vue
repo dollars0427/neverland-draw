@@ -15,7 +15,7 @@
         單抽
       </button>
       <button class="btn btn-primary" v-on:click="drawTen">
-        十連抽
+        10 + 1連抽
       </button>
     </div>
 
@@ -53,7 +53,7 @@ export default {
       //Clear result
       this.results = [];
       let items = this.poolItems;
-      for(let i = 0; i < 10; i++){
+      for(let i = 0; i < 11; i++){
         const result = items[Math.floor(Math.random() * items.length)];
         this.results.push(result);
       }
